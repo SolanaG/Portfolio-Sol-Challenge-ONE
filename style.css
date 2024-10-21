@@ -1,0 +1,396 @@
+:root {
+  --color-de-fondo: ;
+  --color-de-fondo-menu: #ffffff;
+  --color-de-link: #7d5a50;
+  --color-titulo: #d881a3;
+  --color-subtitulo: #f2a8c1;
+  --color-texto: #555555;
+  --color-boton: #d881a3;
+  --color-boton-hover: #f2a8c1;
+}
+
+body {
+  background-color: var(--color-de-fondo);
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  line-height: 1.6;
+  color: var(--color-texto);
+}
+
+h2,
+h3 {
+  color: var(--color-titulo);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-de-link);
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* ------------------------------ Sección Menú -------------------------------*/
+.cabecera {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--color-de-fondo-menu);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navegacion__lista {
+  display: none;
+}
+
+.navegacion__elemento a {
+  font-size: 1rem;
+  color: var(--color-de-link);
+}
+
+.navegacion__elemento a:hover {
+  color: var(--color-titulo);
+}
+
+/* ------------------------------ Sección Presentación ------------------------------*/
+.presentacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.presentacion__foto {
+  border-radius: 100%;
+  width: 150px;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.presentacion__titulo {
+  font-size: 1.8rem;
+  color: var(--color-titulo);
+  margin-bottom: 0.5rem;
+}
+
+.presentacion__subtitulo {
+  font-size: 1.2rem;
+  color: var(--color-subtitulo);
+}
+
+.redes {
+  display: flex;
+  gap: 30px;
+  margin-top: 1rem;
+}
+
+.redes__img a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--color-de-link);
+}
+
+/* ------------------------------ Sección sobre mí ----------------------------------*/
+.sobre-mi {
+  padding: 2rem;
+}
+
+.sobre-mi__titulo {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.sobre-mi__texto {
+  margin-bottom: 1rem;
+  color: var(--color-texto);
+  line-height: 1.8;
+}
+
+/* ------------------------------ Sección de Habilidades ------------------------------*/
+.habilidades__titulo {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.habilidades__lista {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.habilidades__elemento {
+  text-align: center;
+  flex-basis: 45%;
+}
+
+.habilidades__icono {
+  width: 35px;
+  margin-bottom: 0.5rem;
+}
+
+/* ------------------------------ Sección de Aficiones ------------------------------*/
+.aficiones {
+  padding: 2rem 1rem;
+  text-align: center;
+  background-color: var(--color-de-fondo);
+}
+
+.aficiones__titulo {
+  font-size: 1.8rem;
+  color: var(--color-titulo);
+  margin-bottom: 2rem;
+}
+
+.aficiones__lista {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.aficiones__elemento {
+  flex-basis: 200px;
+  text-align: center;
+}
+
+.aficiones__icono {
+  width: 40px;
+  margin-bottom: 1rem;
+}
+
+.aficiones__nombre {
+  font-size: 1.2rem;
+  color: var(--color-subtitulo);
+}
+
+/* ------------------------------ Sección de Formación académica ------------------------------*/
+.formacion {
+  padding: 2rem 1rem;
+  background-color: var(--color-de-fondo);
+  text-align: center;
+}
+
+.formacion__titulo {
+  font-size: 1.8rem;
+  color: var(--color-titulo);
+  margin-bottom: 2rem;
+}
+
+.formacion__lista {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.formacion__elemento {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: left;
+  flex-basis: 300px;
+}
+
+.formacion__icono {
+  width: 60px;
+}
+
+.formacion__nombre {
+  font-size: 1.4rem;
+  color: var(--color-titulo);
+}
+
+.formacion__detalle {
+  font-size: 1rem;
+  color: var(--color-subtitulo);
+}
+
+/* ------------------------------ Sección de Proyectos ------------------------------*/
+.proyectos {
+  padding: 2rem 1rem;
+  background-color: var(--color-de-fondo);
+}
+
+.proyectos__titulo {
+  font-size: 1.8rem;
+  color: var(--color-titulo);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.proyectos__contenedor {
+  background-color: var(--color-de-fondo-menu);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.proyectos__nombre {
+  font-size: 1.4rem;
+  color: var(--color-titulo);
+  margin-bottom: 0.5rem;
+}
+
+.proyectos__descripcion {
+  font-size: 1rem;
+  color: var(--color-texto);
+  line-height: 1.8;
+}
+
+.encriptador_img {
+  width: 100%;
+}
+
+/* ------------------------------ Sección de Contacto ---------------------------------*/
+.contacto {
+  padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contacto__campo {
+  width: 100%;
+  max-width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.contacto__boton {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--color-boton);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+  display: block;
+}
+
+.contacto__boton:hover {
+  background-color: var(--color-boton-hover);
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+/* ------------------------------ Responsividad ---------------------------------------*/
+/* Móviles */
+@media (min-width: 320px) and (max-width: 480px) {
+  .presentacion__foto {
+    width: 120px;
+  }
+
+  .habilidades__elemento {
+    flex-basis: 100%;
+  }
+
+  .cabecera {
+    padding: 1rem 0.5rem;
+  }
+
+  .contacto {
+    padding: 1rem;
+  }
+
+  .contacto__boton {
+    width: 100%;
+    max-width: none;
+  }
+
+  .aficiones__elemento {
+    flex-basis: 100%;
+  }
+
+  .formacion__elemento {
+    flex-basis: 100%;
+  }
+
+  .proyectos__contenedor {
+    padding: 1rem;
+  }
+}
+
+/* Tablets */
+@media (min-width: 768px) {
+  .cabecera {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .navegacion__lista {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .presentacion {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .presentacion__foto {
+    width: 200px;
+  }
+
+  .habilidades__elemento {
+    flex-basis: 45%;
+  }
+
+  .aficiones__elemento {
+    flex-basis: 45%;
+  }
+
+  .formacion__elemento {
+    flex-basis: 45%;
+  }
+
+  .proyectos__contenedor {
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .cabecera {
+    padding: 2rem 3rem;
+  }
+
+  .presentacion {
+    padding: 3rem;
+  }
+
+  .habilidades__elemento {
+    flex-basis: 30%;
+  }
+
+  .aficiones__elemento {
+    flex-basis: 30%;
+  }
+
+  .formacion__elemento {
+    flex-basis: 30%;
+  }
+
+  .proyectos__contenedor {
+    padding: 2rem;
+  }
+}
